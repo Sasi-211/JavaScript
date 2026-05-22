@@ -1,0 +1,13 @@
+#display {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+
+    background-size: cover;
+}
+button{
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
