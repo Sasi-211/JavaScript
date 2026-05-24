@@ -1,0 +1,54 @@
+* {
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: blue;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+
+    padding: 2em;
+    width: 400px;
+
+    background: white;
+}
+
+form input{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+
+    border-width: 1px;
+}
+
+form input[type="submit"] {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transition: .3s;
+}
+
+form input[type="submit"]:hover {
+    background: white;
+    color: var(--primary-color);
+}
+form #error{
+    color: red;
+}

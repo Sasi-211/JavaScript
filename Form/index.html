@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="container">
+        <form onsubmit="validateForm(event)">
+            <h1>Log in Form</h1>
+            <input type="text" placeholder="Enter username" name="username" id="username" />
+            <input type="password" placeholder="password" name="password" id="password" />
+            <div>
+                <input type="checkbox" id="show" onchange="showPassword(event)" />
+                <label for="show">show password</label>
+            </div>
+            <span id="error"></span>
+            <input type="submit" value="Log In" />
+        </form>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
